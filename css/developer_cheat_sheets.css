@@ -1,0 +1,87 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;
+}
+
+/*SHOW LAYOUT*/
+/* *{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
+    text-align:center;
+} */
+
+/*GENERAL STYLES*/
+#cheat_sheets{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#header_bar, #footer_bar{
+  color: white;
+  background-color: black;
+  padding: 1%;
+  text-align: center;
+}
+
+#header_bar, #footer_bar h1{
+  font-size: 2.25rem;
+}
+
+#cheat_sheets h2{
+  font-size: 2rem;
+}
+
+#disclaimer{
+  font-size: 1.25rem;
+  justify-content: center;
+  padding: 1%;
+  text-align: center;
+}
+
+#disclaimer h3{
+  color: red;
+  text-align: center;
+}
+
+#disclaimer p{
+  color: rebeccapurple;
+}
+
+#front_end, #back_end, #data_analysis, #more_sheets{
+  font-size: 1.35rem;
+  padding: 1%;
+  width: 32%;
+}
+
+#fe_links a, #be_links a, #da_links a, #more_links a{
+  text-decoration: none;
+  color: black;
+}
+
+/*ACCESSIBILITY*/
+@media(max-width:800px){
+  #front_end, #back_end, #data_analysis, #more_sheets{
+  padding: 5%;
+}
+}
