@@ -30,6 +30,32 @@ vertical-align: baseline;
     text-align:center;
 } */
 
+/*ANIMATION FADE-IN / FADE-OUT*/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 /*GENERAL STYLES*/
 #cheat_sheets{
   display: flex;
@@ -71,12 +97,59 @@ vertical-align: baseline;
 #front_end, #back_end, #data_analysis, #more_sheets{
   font-size: 1.35rem;
   padding: 1%;
+  margin: 1%;
   width: 32%;
 }
 
-#fe_links a, #be_links a, #da_links a, #more_links a{
+#front_end h2, #back_end h2, #data_analysis h2, #more_sheets h2{
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#front_end{
+  color: white;
+  background-color: blue;
+}
+
+#back_end{
+  color: white;
+  background-color: purple;
+}
+
+#data_analysis{
+  background-color: yellow;
+}
+
+#more_Sheets{
+  background-color: orange;
+}
+
+#fe_links, #be_links{
+  margin: 1%;
+}
+
+#fe_links a, #be_links a{
+  text-decoration: none;
+  color: white;
+}
+
+#da_links, #more_links{
+    margin: 1%;
+}
+
+#da_links a, #more_links a{
   text-decoration: none;
   color: black;
+}
+
+#fe_links li, #be_links li, #da_links li, #more_links li{
+  padding: .5%;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
 }
 
 /*ACCESSIBILITY*/
