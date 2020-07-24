@@ -96,7 +96,7 @@ vertical-align: baseline;
 
 #front_end, #back_end, #data_analysis, #more_sheets{
   font-size: 1.35rem;
-  padding: 1%;
+  padding: .5%;
   margin: 1%;
   width: 32%;
 }
@@ -155,6 +155,6 @@ vertical-align: baseline;
 /*ACCESSIBILITY*/
 @media(max-width:800px){
   #front_end, #back_end, #data_analysis, #more_sheets{
-  padding: 5%;
+  padding: 1.5%;	
 }
 }
