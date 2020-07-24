@@ -78,6 +78,10 @@ vertical-align: baseline;
   font-size: 2rem;
 }
 
+#searchbar{
+  padding: 1%;
+}
+
 #disclaimer{
   font-size: 1.25rem;
   justify-content: center;
@@ -154,7 +158,10 @@ vertical-align: baseline;
 
 /*ACCESSIBILITY*/
 @media(max-width:800px){
-  #front_end, #back_end, #data_analysis, #more_sheets{
+#front_end, #back_end, #data_analysis, #more_sheets{
   padding: 1.5%;	
+}
+#searchbar{
+  margin: 1%;
 }
 }
